@@ -1,0 +1,17 @@
+Package: com.pomo.monkey01.AutoDownApp
+Name: AutoDownApp
+Version: 0.1-1
+Description: 
+Section: System
+Depends: firmware (>= 5.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: 刘华龙
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

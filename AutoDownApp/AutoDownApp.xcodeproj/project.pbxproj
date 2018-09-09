@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E79A78C421402CDD004DEF17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A78C321402CDD004DEF17 /* UIKit.framework */; };
+		E79A78C621402CDD004DEF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A78C521402CDD004DEF17 /* Foundation.framework */; };
+		E79A78C821402CDD004DEF17 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A78C721402CDD004DEF17 /* CydiaSubstrate.framework */; };
+		E79A78D121402CDD004DEF17 /* AutoDownApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E79A78D021402CDD004DEF17 /* AutoDownApp.mm */; };
+		E79A78DC21425D22004DEF17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A78DB21425D22004DEF17 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E79A78C021402CDD004DEF17 /* AutoDownApp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AutoDownApp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79A78C321402CDD004DEF17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E79A78C521402CDD004DEF17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E79A78C721402CDD004DEF17 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		E79A78CC21402CDD004DEF17 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		E79A78CE21402CDD004DEF17 /* AutoDownApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoDownApp-Prefix.pch"; sourceTree = "<group>"; };
+		E79A78CF21402CDD004DEF17 /* AutoDownApp.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoDownApp.xm; sourceTree = "<group>"; };
+		E79A78D021402CDD004DEF17 /* AutoDownApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AutoDownApp.mm; sourceTree = "<group>"; };
+		E79A78D521402CDD004DEF17 /* AutoDownApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AutoDownApp.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AutoDownApp.plist; sourceTree = "<group>"; };
+		E79A78DB21425D22004DEF17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E79A78BC21402CDD004DEF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A78DC21425D22004DEF17 /* StoreKit.framework in Frameworks */,
+				E79A78C421402CDD004DEF17 /* UIKit.framework in Frameworks */,
+				E79A78C621402CDD004DEF17 /* Foundation.framework in Frameworks */,
+				E79A78C821402CDD004DEF17 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E79A78B521402CDD004DEF17 = {
+			isa = PBXGroup;
+			children = (
+				E79A78C921402CDD004DEF17 /* AutoDownApp */,
+				E79A78C221402CDD004DEF17 /* Frameworks */,
+				E79A78C121402CDD004DEF17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E79A78C121402CDD004DEF17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78C021402CDD004DEF17 /* AutoDownApp.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E79A78C221402CDD004DEF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78DB21425D22004DEF17 /* StoreKit.framework */,
+				E79A78C321402CDD004DEF17 /* UIKit.framework */,
+				E79A78C521402CDD004DEF17 /* Foundation.framework */,
+				E79A78C721402CDD004DEF17 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79A78C921402CDD004DEF17 /* AutoDownApp */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78CF21402CDD004DEF17 /* AutoDownApp.xm */,
+				E79A78D021402CDD004DEF17 /* AutoDownApp.mm */,
+				E79A78CA21402CDD004DEF17 /* Package */,
+				E79A78CD21402CDD004DEF17 /* Supporting Files */,
+			);
+			path = AutoDownApp;
+			sourceTree = "<group>";
+		};
+		E79A78CA21402CDD004DEF17 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78CB21402CDD004DEF17 /* DEBIAN */,
+				E79A78D221402CDD004DEF17 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		E79A78CB21402CDD004DEF17 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78CC21402CDD004DEF17 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		E79A78CD21402CDD004DEF17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78CE21402CDD004DEF17 /* AutoDownApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E79A78D221402CDD004DEF17 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78D321402CDD004DEF17 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		E79A78D321402CDD004DEF17 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78D421402CDD004DEF17 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		E79A78D421402CDD004DEF17 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				E79A78D521402CDD004DEF17 /* AutoDownApp.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E79A78BD21402CDD004DEF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E79A78BF21402CDD004DEF17 /* AutoDownApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79A78D821402CDD004DEF17 /* Build configuration list for PBXNativeTarget "AutoDownApp" */;
+			buildPhases = (
+				E79A78BA21402CDD004DEF17 /* ShellScript */,
+				E79A78BB21402CDD004DEF17 /* Sources */,
+				E79A78BC21402CDD004DEF17 /* Frameworks */,
+				E79A78BD21402CDD004DEF17 /* Headers */,
+				E79A78BE21402CDD004DEF17 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoDownApp;
+			productName = AutoDownApp;
+			productReference = E79A78C021402CDD004DEF17 /* AutoDownApp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E79A78B621402CDD004DEF17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					E79A78BF21402CDD004DEF17 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = E79A78B921402CDD004DEF17 /* Build configuration list for PBXProject "AutoDownApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E79A78B521402CDD004DEF17;
+			productRefGroup = E79A78C121402CDD004DEF17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E79A78BF21402CDD004DEF17 /* AutoDownApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E79A78BA21402CDD004DEF17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		E79A78BE21402CDD004DEF17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E79A78BB21402CDD004DEF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A78D121402CDD004DEF17 /* AutoDownApp.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E79A78D621402CDD004DEF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"AutoDownApp\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E79A78D721402CDD004DEF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"AutoDownApp\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		E79A78D921402CDD004DEF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoDownApp/AutoDownApp-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = tuandai;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E79A78DA21402CDD004DEF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoDownApp/AutoDownApp-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = tuandai;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E79A78B921402CDD004DEF17 /* Build configuration list for PBXProject "AutoDownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A78D621402CDD004DEF17 /* Release */,
+				E79A78D721402CDD004DEF17 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E79A78D821402CDD004DEF17 /* Build configuration list for PBXNativeTarget "AutoDownApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A78D921402CDD004DEF17 /* Release */,
+				E79A78DA21402CDD004DEF17 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E79A78B621402CDD004DEF17 /* Project object */;
+}
