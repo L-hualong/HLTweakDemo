@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E79A792D2142D011004DEF17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A792C2142D011004DEF17 /* UIKit.framework */; };
+		E79A792F2142D011004DEF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A792E2142D011004DEF17 /* Foundation.framework */; };
+		E79A79312142D011004DEF17 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79A79302142D011004DEF17 /* CydiaSubstrate.framework */; };
+		E79A793A2142D011004DEF17 /* AppStoreAutoLogin.mm in Sources */ = {isa = PBXBuildFile; fileRef = E79A79392142D011004DEF17 /* AppStoreAutoLogin.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E79A79292142D011004DEF17 /* AppStoreAutoLogin.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AppStoreAutoLogin.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79A792C2142D011004DEF17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E79A792E2142D011004DEF17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E79A79302142D011004DEF17 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		E79A79352142D011004DEF17 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		E79A79372142D011004DEF17 /* AppStoreAutoLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppStoreAutoLogin-Prefix.pch"; sourceTree = "<group>"; };
+		E79A79382142D011004DEF17 /* AppStoreAutoLogin.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppStoreAutoLogin.xm; sourceTree = "<group>"; };
+		E79A79392142D011004DEF17 /* AppStoreAutoLogin.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppStoreAutoLogin.mm; sourceTree = "<group>"; };
+		E79A793E2142D011004DEF17 /* AppStoreAutoLogin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AppStoreAutoLogin.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AppStoreAutoLogin.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E79A79252142D011004DEF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A792D2142D011004DEF17 /* UIKit.framework in Frameworks */,
+				E79A792F2142D011004DEF17 /* Foundation.framework in Frameworks */,
+				E79A79312142D011004DEF17 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E79A791E2142D011004DEF17 = {
+			isa = PBXGroup;
+			children = (
+				E79A79322142D011004DEF17 /* AppStoreAutoLogin */,
+				E79A792B2142D011004DEF17 /* Frameworks */,
+				E79A792A2142D011004DEF17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E79A792A2142D011004DEF17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79A79292142D011004DEF17 /* AppStoreAutoLogin.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E79A792B2142D011004DEF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79A792C2142D011004DEF17 /* UIKit.framework */,
+				E79A792E2142D011004DEF17 /* Foundation.framework */,
+				E79A79302142D011004DEF17 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79A79322142D011004DEF17 /* AppStoreAutoLogin */ = {
+			isa = PBXGroup;
+			children = (
+				E79A79382142D011004DEF17 /* AppStoreAutoLogin.xm */,
+				E79A79392142D011004DEF17 /* AppStoreAutoLogin.mm */,
+				E79A79332142D011004DEF17 /* Package */,
+				E79A79362142D011004DEF17 /* Supporting Files */,
+			);
+			path = AppStoreAutoLogin;
+			sourceTree = "<group>";
+		};
+		E79A79332142D011004DEF17 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				E79A79342142D011004DEF17 /* DEBIAN */,
+				E79A793B2142D011004DEF17 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		E79A79342142D011004DEF17 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				E79A79352142D011004DEF17 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		E79A79362142D011004DEF17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79A79372142D011004DEF17 /* AppStoreAutoLogin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E79A793B2142D011004DEF17 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E79A793C2142D011004DEF17 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		E79A793C2142D011004DEF17 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				E79A793D2142D011004DEF17 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		E79A793D2142D011004DEF17 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				E79A793E2142D011004DEF17 /* AppStoreAutoLogin.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E79A79262142D011004DEF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E79A79282142D011004DEF17 /* AppStoreAutoLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79A79412142D011004DEF17 /* Build configuration list for PBXNativeTarget "AppStoreAutoLogin" */;
+			buildPhases = (
+				E79A79232142D011004DEF17 /* ShellScript */,
+				E79A79242142D011004DEF17 /* Sources */,
+				E79A79252142D011004DEF17 /* Frameworks */,
+				E79A79262142D011004DEF17 /* Headers */,
+				E79A79272142D011004DEF17 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppStoreAutoLogin;
+			productName = AppStoreAutoLogin;
+			productReference = E79A79292142D011004DEF17 /* AppStoreAutoLogin.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E79A791F2142D011004DEF17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					E79A79282142D011004DEF17 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = E79A79222142D011004DEF17 /* Build configuration list for PBXProject "AppStoreAutoLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E79A791E2142D011004DEF17;
+			productRefGroup = E79A792A2142D011004DEF17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E79A79282142D011004DEF17 /* AppStoreAutoLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E79A79232142D011004DEF17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		E79A79272142D011004DEF17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E79A79242142D011004DEF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79A793A2142D011004DEF17 /* AppStoreAutoLogin.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E79A793F2142D011004DEF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"AppStoreAutoLogin\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E79A79402142D011004DEF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"AppStoreAutoLogin\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		E79A79422142D011004DEF17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppStoreAutoLogin/AppStoreAutoLogin-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = tuandai;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E79A79432142D011004DEF17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppStoreAutoLogin/AppStoreAutoLogin-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = tuandai;
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = NO;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E79A79222142D011004DEF17 /* Build configuration list for PBXProject "AppStoreAutoLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A793F2142D011004DEF17 /* Release */,
+				E79A79402142D011004DEF17 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E79A79412142D011004DEF17 /* Build configuration list for PBXNativeTarget "AppStoreAutoLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A79422142D011004DEF17 /* Release */,
+				E79A79432142D011004DEF17 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E79A791F2142D011004DEF17 /* Project object */;
+}
